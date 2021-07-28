@@ -44,7 +44,12 @@ exports.cos = {
 
 ```js
 // {app_root}/config/config.default.js
-exports.cos = {};
+exports.cos = {
+  Bucket: '',
+  Region: '',
+  SecretId: '',
+  SecretKey: '',
+};
 ```
 
 see [config/config.default.js](config/config.default.js) for more detail.
@@ -52,6 +57,10 @@ see [config/config.default.js](config/config.default.js) for more detail.
 ## Example
 
 <!-- example here -->
+
+```js
+this.app.cos2.putObject(/* ... */);
+```
 
 ## Questions & Suggestions
 
